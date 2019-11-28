@@ -1,0 +1,47 @@
+.list{
+    position: relative;
+    width:1.87rem;
+    height:2.82rem;
+    background: white;
+    img{
+        width:100%;
+    }
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: absolute;
+        top:2rem;
+        left:.1rem;
+        font-size:.13rem;
+        width:1.65rem;
+        height:.18rem;
+    }
+    h2{
+        position: absolute;
+        top:2.3rem;
+        left:.1rem;
+        font-size:.19rem;
+        color:#fa585a;
+        font-weight: 200;
+    }
+    h3{
+        position: absolute;
+        top:2.6rem;
+        left:.4rem;
+        font-size: .1rem;
+        font-weight:200;
+    }
+    h4{
+        width:.37rem;
+        height:.14rem;
+        position: absolute;
+        top:2.37rem;
+        left:1.4rem;
+        border: 1px solid #fa585a;
+        font-size:.1rem;
+        color:#fa585a;
+        text-align: center;
+        line-height: .14rem
+    }
+}

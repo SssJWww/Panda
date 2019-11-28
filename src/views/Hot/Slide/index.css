@@ -1,0 +1,28 @@
+.swiper-container {
+  height: 1.4rem;
+  width: 3rem;
+}
+.swiper-slide {
+  width: 0.9rem;
+  height: 1.4rem;
+}
+.slide_img {
+  width: 0.89rem;
+  height: 0.89rem;
+}
+.desc {
+  font-size: 0.12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.price{
+    text-align: center;
+    color:#fa585a;
+    font-size:.16rem;
+    font-weight: 200;
+    margin-top:.07rem;    
+}
+span{
+    font-size:.13rem;
+}

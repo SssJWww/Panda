@@ -17,6 +17,7 @@
     }
   }
   .multi {
+    overflow: hidden;
     width: 2.3rem;
     height: 0.5rem;
     position: absolute;
@@ -26,6 +27,8 @@
     div {
       text-align: center;
       color: #43240c;
+      width:100%;
+      height:.5rem;
       a {
         height:.49rem;
         color: #43240c;
@@ -41,4 +44,10 @@
 }
 .jjj {
   color: red;
+}
+
+.fix{
+  position: fixed;
+  top:0;
+  left:0;
 }

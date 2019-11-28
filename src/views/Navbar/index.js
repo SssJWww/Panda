@@ -7,16 +7,16 @@ import 'swiper/css/swiper.min.css'
 class Navbar extends Component {
     state = {
         datalist: null,
-        current: 0
     }
     render() {
+        console.log(this.props)
         return (
             <div className={style.nav}>
                 <div className={style.now}>
                     <NavLink to={"/home"} activeClassName={style.check}>今日推荐</NavLink>
                 </div>
-                <div className={style.multi}>
-                    <div className="swiper-container">
+                <div className={style.multi +" "+(this.props.isFixed?style.fix:style.unfix)} ref="shiwei">
+                    <div className="swiper-container shishishi">
                         <div className="swiper-wrapper">
                             {this.state.datalist ? this.state.datalist.map((item, index) => {
                                 return <div className="swiper-slide" key={item.id}><NavLink to={`/tab/${item.id}`} activeClassName={style.check}>{item.name}</NavLink></div>
@@ -35,17 +35,18 @@ class Navbar extends Component {
             this.setState({
                 datalist: res.data.data.list.slice(1)
             }, () => {
-                new Swiper('.swiper-container', {
+                new Swiper('.shishishi', {
                     centeredSlides: false,
                     slidesPerView: 3.5,
                     spaceBetween: 10,
-                    slideToClickedSlide:true
+                    slideToClickedSlide: true
                 });
-
             })
         })
-
-
+        
+    }
+    componentDidUpdate(){
+        console.log(this.refs.shiwei.scrollTop)
     }
 }
 export default Navbar

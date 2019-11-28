@@ -1,0 +1,48 @@
+.hot {
+  width: 100%;
+  height: 1.5rem;
+  background: white;
+  margin-top: 0.05rem;
+  position: relative;
+  .rank {
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    width: 0.42rem;
+    height: 1.3rem;
+    background: #fee44e;
+    img {
+      width: 0.27rem;
+      height: 0.61rem;
+      position: absolute;
+      top: 0.3rem;
+      left: 0.06rem;
+    }
+  }
+  .slide {
+    width: 3.2rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.5rem;
+  }
+  .store {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 1.6rem;
+    li:nth-of-type(odd) {
+      width: 1.7rem;
+      float: left;
+      margin-right:.1rem;
+      margin-bottom:.05rem;
+
+    }
+    li:nth-of-type(even){
+        width: 1.7rem;
+        float: left;
+        margin-left:.1rem;
+        margin-bottom:.05rem;    
+    }
+  }
+}
