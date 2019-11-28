@@ -1,0 +1,24 @@
+.yellow{
+    width:100%;
+    height:.45rem;
+    background: #fdde4a;
+    position: relative;
+    input{
+        position: absolute;
+        top:.08rem;
+        left:.17rem;
+        width:3.4rem;
+        height:.3rem;
+        line-height: .32rem;
+        border:0;
+        border-radius:10px;
+        font-size:.14rem;
+        padding-left:.3rem;
+    }
+    i{
+        font-size: .2rem;
+        position: absolute;
+        left:.25rem;
+        top:.13rem;
+    }
+}

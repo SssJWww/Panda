@@ -1,0 +1,43 @@
+.nav {
+  width: 100%;
+  height: 0.5rem;
+  background: #fdde4a;
+  position: relative;
+  .now {
+    width: 0.6rem;
+    height: 0.5rem;
+    font-size: 0.15rem;
+    line-height: 0.5rem;
+    position: absolute;
+    left: 0.2rem;
+    a {
+      color: black;
+      display: inline-block;
+      height: 0.49rem;
+    }
+  }
+  .multi {
+    width: 2.3rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 1.05rem;
+    line-height: 0.5rem;
+    div {
+      text-align: center;
+      color: #43240c;
+      a {
+        height:.49rem;
+        color: #43240c;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.check {
+  border-bottom: 3px solid brown;
+}
+.jjj {
+  color: red;
+}
