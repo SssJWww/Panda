@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './App.scss';
-import Axios from 'axios'
+// import Axios from 'axios'
 class App extends Component{
     render(){
       return (
@@ -10,9 +10,9 @@ class App extends Component{
       )
     }
     componentDidMount(){
-      Axios.get("http://www.xiongmaoyouxuan.com/api/tabs?sa=").then(res=>{
-        console.log(res.data)
-      })
+      // Axios.get("http://www.xiongmaoyouxuan.com/api/tabs?sa=").then(res=>{
+        // console.log(res.data)
+      // })
     }
 }
 

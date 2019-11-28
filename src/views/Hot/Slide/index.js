@@ -14,7 +14,7 @@ class Slide extends Component {
                     <div className="swiper-wrapper">
                         {this.state.datalist.map((item,index) => {
                             return <div className="swiper-slide" key={index}>
-                                <img src={item.image} className="slide_img"/>
+                                <img src={item.image} className="slide_img" alt="123"/>
                                 <p className="desc">{item.qunTitle.replace("【","").replace("】","")}</p>
                                 <h3 className="price">¥{(item.price).toString().split(".")[0]}.<span>{(item.price).toString().split(".")[1]}</span></h3>
                             </div>

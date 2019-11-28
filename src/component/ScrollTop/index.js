@@ -15,7 +15,7 @@ const ScrollTop = (MyComponent) => {
 
         componentDidMount() {
             window.onscroll = () => {
-                if ((document.documentElement.scrollTop || document.body.scrollTop) >=200) {
+                if ((document.documentElement.scrollTop || document.body.scrollTop) >=45) {
                     this.setState({
                         isFixed:true
                     })

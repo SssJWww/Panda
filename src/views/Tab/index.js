@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import style from './index.module.scss'
 import Navbar from '../Navbar';
-import Axios from 'axios';
+// import Axios from 'axios';
 class Tab extends Component {
     state={
         datalist:null
