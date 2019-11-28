@@ -75,8 +75,8 @@ class Detail extends Component {
         )
     }
     handleBtn = () => {
-        console.log(this.props.history)
-        // this.props.history.push("/home")
+        // console.log(this.props.history)
+        this.props.history.push("/home")
     }
 }
 export default Detail
