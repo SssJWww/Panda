@@ -8,20 +8,20 @@ class Detail extends Component {
         datalist: null
     }
     componentDidMount() {
-        Axios.get('http://www.xiongmaoyouxuan.com/api/detail?id=23441567&normal=1&sa=').then(res => {
-            console.log(res.data.data.detail.descContentList[0].image)
+        Axios.get(`http://www.xiongmaoyouxuan.com/api/detail?id=${this.props.match.params.id}&normal=1&sa=`).then(res => {
+            // console.log(res.data.data.detail.descContentList[0].image)
             this.setState({
                 datalist: res.data.data
             })
         })
     }
     render() {
-        // console.log(this.state.datalist.detail)
+        // console.log(this.props.match.params.id)
         return (
             <div>
                 <div className={style.box}>
                     <div className={style.back_btn} onClick={() => this.handleBtn()}></div>
-                    <div><DetailSwiper /></div>
+                    <div><DetailSwiper {...this.props}/></div>
                 </div>
                 {
                     this.state.datalist ?
@@ -76,7 +76,7 @@ class Detail extends Component {
     }
     handleBtn = () => {
         console.log(this.props.history)
-        // this.props.history.push("/home")
+        this.props.history.go(-1)
     }
 }
 export default Detail
