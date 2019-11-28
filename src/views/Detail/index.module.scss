@@ -1,0 +1,109 @@
+.box{
+    .back_btn{
+        width: .35rem;
+        height: .35rem;
+        position: fixed;
+        top: .2rem;
+        left: .2rem;
+        background-color: rgba(0,0,0,.5);
+        z-index: 1000;
+        border-radius: 50%;
+        background-image: url(//img6.lukou.com/static/img/back-write.d142e02.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 25%;
+    }
+}
+
+.info{
+    padding: .130rem .130rem .130rem .16rem;
+    background: #fff;
+    color: #b1a9a5;
+    .title{
+        img{
+            width:.3rem;
+            position:absolute;
+        }
+        p{
+            text-indent: .35rem;
+            color:black;
+        }
+    }
+    .price{
+        margin-top:.1rem;
+        img{
+            width:.6rem;
+            float: left; 
+            margin-top:.1rem;
+        }
+        .priceNow{
+           color:red;
+           font-size:.3rem;
+           font-family: Avenir,Helvetica,Arial,sans-serif; 
+           font-weight: bold;
+        }
+        span,i{
+            font-style:normal;
+            text-indent: .35rem;
+            color:black;
+            font-size:.15rem;
+            color:red;
+            font-weight: bold;
+            font-family: Avenir,Helvetica,Arial,sans-serif;
+        }
+        .oldPrice{
+            width: 100%;
+            height: .3rem;
+            line-height: .3rem;
+            span{
+                font-size:.13rem;
+                color:#b1a9a5;
+                font-weight: normal;
+            }
+            i{
+                font-size:.13rem;
+                color:#b1a9a5; 
+                font-weight: normal;
+                text-decoration: line-through;
+            }
+            .sale{
+                position: relative;
+                right:-2rem;
+            }
+        }
+    }
+}
+    .text{
+        height: .3rem;
+        text-align: center;
+        position: relative;
+        color:#b1a9a5;
+        background:white;
+        .line1{
+            display: inline-block;
+            position: absolute;
+            top:.1rem;
+            left: .6rem;
+            height: .01rem;
+            width:.6rem;
+            border-bottom: .05rem;
+            background-color:#b1a9a5;
+        }
+        .line2{
+            display: inline-block;
+            position: absolute;
+            top:.1rem;
+            right: .6rem;
+            height: .01rem;
+            width:.6rem;
+            border-bottom: .05rem;
+            background-color:#b1a9a5;
+        }
+    }
+    .images{
+        .img{
+            img{
+                width:100%;
+            }
+        }
+    }
