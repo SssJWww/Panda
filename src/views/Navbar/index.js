@@ -19,7 +19,7 @@ class Navbar extends Component {
                     <div className="swiper-container">
                         <div className="swiper-wrapper">
                             {this.state.datalist ? this.state.datalist.map((item, index) => {
-                                return <div className="swiper-slide" key={item.id} onClick={() => { this.clickPage() }}><NavLink to={`/tab/${item.id}`} activeClassName={style.check}>{item.name}</NavLink></div>
+                                return <div className="swiper-slide" key={item.id}><NavLink to={`/tab/${item.id}`} activeClassName={style.check}>{item.name}</NavLink></div>
                             }) : null}
                         </div>
                     </div>
@@ -28,11 +28,6 @@ class Navbar extends Component {
         )
     }
 
-    clickPage = (index) => {
-        this.setState({
-            current: index
-        })
-    }
 
     componentDidMount() {
         Axios.get("http://www.xiongmaoyouxuan.com/api/tabs?sa=").then(res => {
