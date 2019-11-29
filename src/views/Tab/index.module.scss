@@ -1,24 +1,101 @@
-.yellow{
-    width:100%;
-    height:.45rem;
-    background: #fdde4a;
+.yellow {
+  width: 100%;
+  height: 0.45rem;
+  background: #fdde4a;
+  position: relative;
+  input {
+    position: absolute;
+    top: 0.08rem;
+    left: 0.17rem;
+    width: 3.4rem;
+    height: 0.3rem;
+    line-height: 0.32rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.14rem;
+    padding-left: 0.3rem;
+  }
+  i {
+    font-size: 0.2rem;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.13rem;
+  }
+}
+.yifu {
+  width: 100%;
+  height: 10rem;
+  .uuu {
+    overflow: hidden;
+  }
+  .chao {
+    width: 100%;
+    height: 0.5rem;
+    background: white;
     position: relative;
-    input{
-        position: absolute;
-        top:.08rem;
-        left:.17rem;
-        width:3.4rem;
-        height:.3rem;
-        line-height: .32rem;
-        border:0;
-        border-radius:10px;
-        font-size:.14rem;
-        padding-left:.3rem;
+    p {
+      position: absolute;
+      top: 0.2rem;
+      left: 1.5rem;
+      text-align: center;
+      width: 0.9rem;
+      height: 0.15rem;
+      font-size: 0.13rem;
+      color: hsla(21, 8%, 49%, 0.7);
     }
-    i{
-        font-size: .2rem;
-        position: absolute;
-        left:.25rem;
-        top:.13rem;
+    .left {
+      width: 0.45rem;
+      height: 0.02rem;
+      background: #fdde4a;
+      display: inline-block;
+      position: absolute;
+      left: 1.05rem;
+      top: 0.28rem;
     }
+    .right {
+      width: 0.45rem;
+      height: 0.02rem;
+      background: #fdde4a;
+      display: inline-block;
+      position: absolute;
+      left: 2.37rem;
+      top: 0.28rem;
+    }
+  }
+  .people {
+    width: 100%;
+    height: 0.5rem;
+    position: relative;
+    p {
+      position: absolute;
+      top: 0.2rem;
+      left: 1.45rem;
+      text-align: center;
+      width: 0.9rem;
+      height: 0.15rem;
+      font-size: 0.13rem;
+      color: hsla(21, 8%, 49%, 0.7);
+    }
+    .left {
+      width: 0.45rem;
+      height: 0.02rem;
+      background: #fdde4a;
+      display: inline-block;
+      position: absolute;
+      left: .95rem;
+      top: 0.28rem;
+    }
+    .right {
+      width: 0.45rem;
+      height: 0.02rem;
+      background: #fdde4a;
+      display: inline-block;
+      position: absolute;
+      left: 2.37rem;
+      top: 0.28rem;
+    }
+  }
+}
+li{
+    list-style: none;
 }

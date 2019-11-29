@@ -14,7 +14,7 @@ class Slide extends Component {
                     <div className="swiper-wrapper">
                         {this.state.datalist.map((item,index) => {
                             return <div className="swiper-slide" key={index}>
-                                <img src={item.image} className="slide_img" alt="123"/>
+                                <img src={item.image} className="slide_img" alt="123" onClick={()=>{this.clickImg(item.id)}}/>
                                 <p className="desc">{item.qunTitle.replace("【","").replace("】","")}</p>
                                 <h3 className="price">¥{(item.price).toString().split(".")[0]}.<span>{(item.price).toString().split(".")[1]}</span></h3>
                             </div>
@@ -23,6 +23,10 @@ class Slide extends Component {
                 </div>
             </div>
         )
+    }
+    clickImg=(id)=>{
+        console.log(this.props)
+        this.props.history.push(`/detail/${id}`)
     }
     componentDidMount() {
         Axios.get("http://www.xiongmaoyouxuan.com/api/tab/1?start=0").then(res => {

@@ -30,7 +30,7 @@ class Navbar extends Component {
                 <div>
                     <i className={"iconfont icon-category" + " " + style.iconfont} onClick={() => { this.clickShow() }}></i>
                 </div>
-                <div className={this.state.isShow ? style.hide : style.shiwei}>
+                <div className={this.state.isShow ? style.hide : style.shiwei} >
                     <div className={style.all}>
                         <div className={style.lei}>全部分类</div>
                         <i onClick={() => { this.clickHide() }} className={"iconfont icon-close" + " " + style.false} ></i>
@@ -38,7 +38,7 @@ class Navbar extends Component {
                     <div className={style.cloth}>
                         <ul>
                             {this.state.piclist ? this.state.piclist.map(coco => {
-                                return <Clothes key={coco.id} data={coco}></Clothes>
+                                return <Clothes key={coco.id} data={coco} {...this.props}></Clothes>
                             }) : null}
                         </ul>
                     </div>

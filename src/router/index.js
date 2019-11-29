@@ -16,9 +16,10 @@ const router = (
                 <Route path="/nine" component={Nine}></Route>
                 <Route path="/huge" component={Huge}></Route>
                 <Route path="/girls" component={Girls}></Route>
-                <Route path="/tab/:id" component={Tab}></Route>
+                <Route path="/tab/:id" component={Tab} exact></Route>
                 <Route path="/detail/:id" component={Detail} exact></Route>
                 <Redirect from="/" to="/home"></Redirect>
+                <Redirect from="/tab/1" to="home"></Redirect>
             </Switch>
         </App>
     </HashRouter>
