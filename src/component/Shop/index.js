@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import style from './index.module.scss'
 import { withRouter } from 'react-router-dom'
+import Axios from 'axios'
 class Shop extends Component {
+    state={
+        girl:null
+    }
     render() {
         return (
             <div className={style.shop} >
@@ -15,7 +19,7 @@ class Shop extends Component {
                     <h2>超值大额劵</h2>
                     <p>优惠直击底价</p>
                 </div>
-                <div className={style.girl} onClick={() => { this.clickGirl() }}>
+                <div key={this.state.girl} className={style.girl} onClick={() => { this.clickGirl(this.state.girl) }}>
                     <img alt="123" src="//img1.lukou.com/static/coupon/p/image_link/E34Q8C41idjxahcPcQJ12PeVwHH0qKoP.png" />
                     <h2>女装上新快抢</h2>
                     <p>每日更新</p>
@@ -29,8 +33,16 @@ class Shop extends Component {
     clickNine = () => {
         this.props.history.push(`/huge`)
     }
-    clickGirl = () => {
-        this.props.history.push('/girls')
+    clickGirl = (id) => {
+        this.props.history.push(`/column/${id}`)
+    }
+    componentDidMount(){
+        Axios.get("http://www.xiongmaoyouxuan.com/api/tab/1?start=0").then(res=>{
+            // console.log(res.data.data.gridsV2[2].url.slice(20))
+            this.setState({
+                girl:res.data.data.gridsV2[2].url.slice(20)
+            })
+        })
     }
 }
 export default withRouter(Shop)

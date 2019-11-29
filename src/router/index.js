@@ -7,6 +7,7 @@ import Girls from '../views/Girls'
 import Home from '../views/Home'
 import Tab from '../views/Tab'
 import Detail from '../views/Detail'
+import Column from '../views/Column';
 const router = (
     <HashRouter>
         <App>
@@ -18,6 +19,7 @@ const router = (
                 <Route path="/girls" component={Girls}></Route>
                 <Route path="/tab/:id" component={Tab} exact></Route>
                 <Route path="/detail/:id" component={Detail} exact></Route>
+                <Route path="/column/:id" component={Column}></Route>
                 <Redirect from="/" to="/home"></Redirect>
             </Switch>
         </App>
