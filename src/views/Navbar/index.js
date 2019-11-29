@@ -12,7 +12,6 @@ class Navbar extends Component {
         piclist: null
     }
     render() {
-        // console.log(this.props)
         return (
             <div className={style.nav + " " + (this.props.isFixed ? style.fix : style.unfix)}>
                 <div className={style.now}>
@@ -38,7 +37,7 @@ class Navbar extends Component {
                     <div className={style.cloth}>
                         <ul>
                             {this.state.piclist ? this.state.piclist.map(coco => {
-                                return <Clothes key={coco.id} data={coco} {...this.props}></Clothes>
+                                return <Clothes data={coco} key={coco.id} {...this.props} event={() => { this.evt() }}></Clothes>
                             }) : null}
                         </ul>
                     </div>
@@ -46,7 +45,11 @@ class Navbar extends Component {
             </div>
         )
     }
-
+    evt = () => {
+        this.setState({
+            isShow: false
+        })
+    }
     clickHide = () => {
         this.setState({
             isShow: false
@@ -60,7 +63,7 @@ class Navbar extends Component {
 
     componentDidMount() {
         Axios.get("http://www.xiongmaoyouxuan.com/api/tabs?sa=").then(res => {
-            console.log(res.data.data.list.slice(1))
+            // console.log(res.data.data.list.slice(1))
             this.setState({
                 datalist: res.data.data.list.slice(1)
             }, () => {
@@ -74,7 +77,7 @@ class Navbar extends Component {
         })
 
         Axios.get("http://www.xiongmaoyouxuan.com/api/tabs?sa=").then(res => {
-            console.log(res.data.data.list)
+            // console.log(res.data.data.list)
             this.setState({
                 piclist: res.data.data.list
             })

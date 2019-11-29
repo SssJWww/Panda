@@ -25,7 +25,7 @@ class Slide extends Component {
         )
     }
     clickImg=(id)=>{
-        console.log(this.props)
+        // console.log(this.props)
         this.props.history.push(`/detail/${id}`)
     }
     componentDidMount() {

@@ -18,7 +18,7 @@ class Tab extends Component {
                     <input type="text" placeholder="搜索商品，发现更多优选" />
                     <i className="iconfont icon-search"></i>
                 </div>
-                <Navbar {...this.props} visable={this.state.Hide}></Navbar>
+                <Navbar {...this.props}></Navbar>
                 <div className={style.yifu}>
                     <div className={style.chao}>
                         <p>潮流精选</p>

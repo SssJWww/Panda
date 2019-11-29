@@ -7,7 +7,7 @@ class Tabclothes extends Component {
             <div className={style.box}>
                 {this.props.data?
                 <li className={style.jun}>
-                    <img src={this.props.data.imageUrl} />
+                    <img alt="123" src={this.props.data.imageUrl} />
                     <p>{this.props.data.title}</p>
                 </li>:null}
             </div>
