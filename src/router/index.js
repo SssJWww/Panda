@@ -8,6 +8,9 @@ import Home from '../views/Home'
 import Tab from '../views/Tab'
 import Detail from '../views/Detail'
 import Column from '../views/Column';
+import Bag from '../views/Bag';
+import Category from '../views/Category';
+import Search from '../views/Search';
 const router = (
     <HashRouter>
         <App>
@@ -20,6 +23,9 @@ const router = (
                 <Route path="/tab/:id" component={Tab} exact></Route>
                 <Route path="/detail/:id" component={Detail} exact></Route>
                 <Route path="/column/:id" component={Column}></Route>
+                <Route path="/bag/:id" component={Bag}></Route>
+                <Route path="/category/:id" component={Category}></Route>
+                <Route path="/search" component={Search}></Route>
                 <Redirect from="/" to="/home"></Redirect>
             </Switch>
         </App>
