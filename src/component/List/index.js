@@ -5,7 +5,7 @@ class List extends Component {
         // console.log(this.props.data)
         return (
             <div className={style.list}>
-                <img src={this.props.data.image} />
+                <img alt="123" src={this.props.data.image} />
                 <p>{this.props.data.title}</p>
                 {this.props.data.price ? <h2>￥{(this.props.data.price).toString().split('.')[0]}.<span>{(this.props.data.price).toString().split(".")[1]}</span></h2> : null}
                 {this.props.data.saleNum ? <h3>{this.props.data.saleNum}人已买</h3> : null}

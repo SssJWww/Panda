@@ -17,7 +17,7 @@ class Huadong extends Component {
                     <div className="swiper-wrapper xxx">
                         {this.state.datalist.map(item=>{
                             return <div className="swiper-slide" key={item.id}>
-                                <img className="tututu" src={item.imageUrl}/>
+                                <img alt="123" className="tututu" src={item.imageUrl}/>
                             </div>
                         })}
                     </div>

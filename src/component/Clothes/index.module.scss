@@ -1,0 +1,22 @@
+.jezz{
+    position: relative;;
+    float: left;
+    width:25%;
+    text-align: center;
+    height:.85rem;
+    img{
+        width:.48rem;
+        height:.48rem;
+        position: absolute;
+        top:0;
+        left:.25rem;
+    }
+    p{
+        width:100%;
+        height:.2rem;
+        position: absolute;
+        top:.6rem;
+        left:.03rem;
+        font-size: .12rem
+    }
+}
