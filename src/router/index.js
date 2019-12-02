@@ -11,6 +11,7 @@ import Column from '../views/Column';
 import Bag from '../views/Bag';
 import Category from '../views/Category';
 import Search from '../views/Search';
+import S from '../views/S';
 const router = (
     <HashRouter>
         <App>
@@ -26,6 +27,7 @@ const router = (
                 <Route path="/bag/:id" component={Bag}></Route>
                 <Route path="/category/:id" component={Category}></Route>
                 <Route path="/search" component={Search}></Route>
+                <Route path="/s/:word" component={S}></Route>
                 <Redirect from="/" to="/home"></Redirect>
             </Switch>
         </App>
