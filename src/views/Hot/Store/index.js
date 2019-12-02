@@ -10,7 +10,7 @@ class Store extends Component {
             <div>
                 <ul>
                     {this.state.datalist.map(item => {
-                        return <li key={item.id} onClick={()=>{this.clickJump(item.id,item.keywords)}}><List data={item}></List></li>
+                        return <li key={item.id} onClick={()=>{this.clickJump(item.id,item.keywords,(item.url).slice(20,24))}}><List data={item}></List></li>
                     }
                     )}
                 </ul>
@@ -25,12 +25,12 @@ class Store extends Component {
             })
         })
     }
-    clickJump=(id,keywords)=>{
-        console.log(keywords)
+    clickJump=(id,keywords,idd)=>{
+        // console.log(keywords,idd)
         if(keywords){
             this.props.history.push(`/detail/${id}`)
         }else{
-
+            this.props.history.push(`/column/${idd}`)
         }
         // console.log(this.props)
     }

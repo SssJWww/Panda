@@ -1,0 +1,51 @@
+.yellow {
+  width: 100%;
+  height: 0.45rem;
+  background: #fdde4a;
+  position: relative;
+  input {
+    position: absolute;
+    top: 0.08rem;
+    left: 0.17rem;
+    width: 3.4rem;
+    height: 0.3rem;
+    line-height: 0.32rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.14rem;
+    padding-left: 0.3rem;
+  }
+  i {
+    font-size: 0.2rem;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.13rem;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: 1.46rem;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .back {
+      position: absolute;
+      top:.5rem;
+      left:0;
+      width:.4rem;
+      height:.4rem;
+      background: #fdde4a;
+      border-radius: 50%;
+      line-height: .4rem;
+      text-align: center;
+    i {
+      font-size: 0.3rem;
+    }
+  }
+}
+.store {
+  margin-top: 0.1rem;
+  overflow: hidden;
+}

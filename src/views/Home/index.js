@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <div>
                 <div className={style.yellow}>
-                    <input type="text" placeholder="搜索商品，发现更多优选" />
+                    <input type="text" placeholder="搜索商品，发现更多优选" onClick={()=>{this.clickInput()}} />
                     <i className="iconfont icon-search"></i>
                 </div>
                 <Navbar {...this.props}></Navbar>
@@ -19,6 +19,9 @@ class Home extends Component {
                 <Hot {...this.props}></Hot>
             </div>
         )
+    }
+    clickInput=()=>{
+        this.props.history.push(`/search`)
     }
 }
 export default ScrollTop(Home) 
