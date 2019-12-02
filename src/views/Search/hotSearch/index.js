@@ -33,10 +33,8 @@ class HotSearch extends Component {
         })
     }
     handleClick = (word)=>{
-       var wo= encodeURI(word)
-               console.log(wo)
-
-        // this.props.history.push(``)
+        // console.log(word)
+        this.props.history.push(`/s/${word}`)
     }
 }
 export default HotSearch
