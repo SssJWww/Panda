@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    background:#fdde4a;
+    // position:fixed;
+    // top:0;
+    // left:0;
+    // right: 0;
+    p{
+        float: left;
+        margin-left:.2rem;
+    }
+    .search{
+        float: left;
+        width:64%;
+        background:#eee;
+        height: .3rem;
+        line-height: .3rem;
+        padding-left:.2rem;
+        margin-left: .2rem;
+        margin-top:.1rem;
+        border-radius:10px;
+        i{
+            font-size: .2rem;
+            position: absolute;
+            left:.8rem;
+            top:.13rem;
+        }
+        input{
+            
+            border:0;
+            background:#eee ;
+            padding-left: .15rem;
+        }
+    }
+
+}
+    .section,.list{
+        width:100%;
+        height:100% ;
+        background: white;
+        padding:.2rem;
+        h2{
+            width: 100%;
+            font-weight: normal;
+            font-size:.15rem;
+            margin-bottom: .1rem;
+        }
+    }
