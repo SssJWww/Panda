@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom'
 import style from './index.module.scss'
 class Tabclothes extends Component {
     render() {
-        console.log(this.props.data)
+        // console.log(this.props.data)
         return (
             <div className={style.box}>
                 {this.props.data?
@@ -17,7 +17,7 @@ class Tabclothes extends Component {
 
     clickGo=(url,id,idd)=>{
         // console.log(id)
-        if(url.indexOf("column")!=-1){
+        if(url.indexOf("column")!==-1){
             console.log("111")
             this.props.history.push(`/column/${id}`)
         }else{
