@@ -16,7 +16,7 @@ class Home extends Component {
                 <Navbar {...this.props}></Navbar>
                 <Huadong></Huadong>
                 <Shop></Shop>
-                <Hot></Hot>
+                <Hot {...this.props}></Hot>
             </div>
         )
     }

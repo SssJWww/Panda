@@ -13,7 +13,7 @@ class Hot extends Component {
                     <Slide></Slide>
                 </div>
                 <div className={style.store}>
-                    <Store></Store>
+                    <Store {...this.props}></Store>
                 </div>
             </div>
         )

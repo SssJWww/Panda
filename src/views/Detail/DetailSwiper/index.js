@@ -9,7 +9,7 @@ class DetailSwiper extends Component {
     }
     componentDidMount() {
         // simulate img loading
-        Axios.get(`http://www.xiongmaoyouxuan.com/api/detail?id=23441567&normal=1&sa=`).then(res => {
+        Axios.get(`http://www.xiongmaoyouxuan.com/api/detail?id=${this.props.match.params.id}&normal=1&sa=`).then(res => {
             // console.log(res.data.data.detail.photo)
             this.setState({
                 data: res.data.data.detail.photo
@@ -18,6 +18,7 @@ class DetailSwiper extends Component {
         })
     }
     render() {
+        // console.log(this.props.match.params.id)
         return (
             <WingBlank>
                 <Carousel
