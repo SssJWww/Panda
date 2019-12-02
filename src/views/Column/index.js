@@ -17,7 +17,7 @@ class Column extends Component {
                 </div>
                 <NavBar></NavBar>
                 {this.state.photolist ? <div className={style.photo}>
-                    <img src={this.state.photolist.cover} />
+                    <img src={this.state.photolist.cover} alt="123" />
                     <div className={style.back} onClick={()=>{this.clickBack()}}><i className="iconfont icon-back"></i></div>
                 </div> : null}
                 <ul className={style.store}>
